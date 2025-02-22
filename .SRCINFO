@@ -1,0 +1,14 @@
+pkgbase = lib32-libva-intel-driver-irql
+	pkgdesc = VA-API implementation for Intel G45 and HD Graphics family (32-bit)
+	pkgver = 2.4.1
+	pkgrel = 3
+	url = https://freedesktop.org/wiki/Software/vaapi
+	arch = x86_64
+	license = MIT
+	depends = lib32-libva
+	provides = lib32-libva-intel-driver
+	conflicts = lib32-libva-intel-driver
+	source = https://github.com/01org/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
+	sha512sums = 1e9dc81ecd0b3640fccd1fb827a0ade0a1e5bbabe375130df159849e47ce98c8e879c65ddaaae11d16e916be76b507be69bc0c813494e37e7fca86b0b897a94f
+
+pkgname = lib32-libva-intel-driver-irql
