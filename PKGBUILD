@@ -31,6 +31,10 @@ build() {
   export PKG_CONFIG_PATH="/usr/lib32/pkgconfig"
 
   CFLAGS+=' -fcommon' # https://wiki.gentoo.org/wiki/Gcc_10_porting_notes/fno_common
+
+  # Something isn't right on the 32-bit version, workaround this.
+  ./autogen.sh
+  
   ./configure \
     --prefix='/usr' \
     --libdir='/usr/lib32'
