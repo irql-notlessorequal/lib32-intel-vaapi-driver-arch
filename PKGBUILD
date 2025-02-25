@@ -32,6 +32,7 @@ build() {
 
   CFLAGS+=' -fcommon' # https://wiki.gentoo.org/wiki/Gcc_10_porting_notes/fno_common
 
+  cd intel-vaapi-driver
   # Something isn't right on the 32-bit version, workaround this.
   ./autogen.sh
   
