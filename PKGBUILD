@@ -47,5 +47,6 @@ package() {
 
   make DESTDIR="${pkgdir}" install
 
-  install -Dm644 COPYING "${pkgdir}"/usr/share/licenses/$pkgname/COPYING
+  # My fork renamed the COPYING file into LICENSE.
+  install -Dm644 LICENSE "${pkgdir}"/usr/share/licenses/$pkgname/COPYING
 }
